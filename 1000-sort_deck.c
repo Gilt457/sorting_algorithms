@@ -30,7 +30,7 @@ int _strcmp(const char *s1, const char *s2)
 
 /**
  * get_value - Returns the numerical value of a card.
- * @card: A pointer to a deck_node_t card.
+ * @card: A denoting a deck_node_t card pointer.
  *
  * Return: The numerical value of the card.
  */
