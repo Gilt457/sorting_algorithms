@@ -7,7 +7,7 @@ void radix_sort(int *array, size_t size);
 /**
  * find_max - Find the largest element in an integer arr.
  * @array: A pointer to an integer arr.
- * @size: The number of elements in the array.
+ * @size: The count of components comprising the array.
  *
  * Return: The largest integer in the array.
  */
@@ -27,8 +27,8 @@ int find_max(int *array, int size)
 /**
  * counting_sort_radix - Sort an integer array by a specific digit
  *                        using the counting sort algorithm.
- * @array: A pointer to an integer array.
- * @size: The number of elements in the array.
+ * @array: A reference to an array of interger.
+ * @size: The count of components comprising the array.
  * @sig: The digit to sort by.
  * @buff: A pointer to a buffer array to store the sorted array.
  */
@@ -56,8 +56,8 @@ void counting_sort_radix(int *array, size_t size, int sig, int *buff)
 /**
  * radix_sort - Sort an integer array in ascending order
  *              using the radix sort algorithm.
- * @array: A pointer to an integer array.
- * @size: The number of elements in the array.
+ * @array: An interger array's pointer.
+ * @size: The dimension of the array in terms of elements.
  *
  * Description: Uses the LSD radix sort algorithm. Prints
  * the array after each digit increment.
