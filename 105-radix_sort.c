@@ -5,8 +5,8 @@ void counting_sort_radix(int *array, size_t size, int sig, int *buff);
 void radix_sort(int *array, size_t size);
 
 /**
- * find_max - Find the largest element in an integer array.
- * @array: A pointer to an integer array.
+ * find_max - Find the largest element in an integer arr.
+ * @array: A pointer to an integer arr.
  * @size: The number of elements in the array.
  *
  * Return: The largest integer in the array.

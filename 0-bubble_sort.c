@@ -16,7 +16,7 @@ void swap(int *x, int *y)
 
 /**
  * bubble_sort - Sort an array of integers in ascending order.
- * @array: An array of integers to sort.
+ * @array: An array of integers to be sort.
  * @size: The size of the array.
  *
  * Description: Prints the array after each exchange.
@@ -26,10 +26,10 @@ void bubble_sort(int *array, size_t size)
 	size_t j, n = size;
 	bool sorted = false;
 
-	if (array == NULL || size < 2)
+	if (array == NULL || size <= 1)
 		return;
 
-	while (sorted == false)
+	while (!sorted)
 	{
 		sorted = true;
 		for (j = 0; j < n - 1; j++)
@@ -41,6 +41,6 @@ void bubble_sort(int *array, size_t size)
 				sorted = false;
 			}
 		}
-		n--;
+		n = n-1;
 	}
 }

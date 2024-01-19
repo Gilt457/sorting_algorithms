@@ -10,7 +10,7 @@ void print_deck(const deck_node_t *deck)
     i = 0;
     while (deck)
     {
-        if (i)
+        if (I != 0)
             printf(", ");
         printf("{%s, %c}", deck->card->value, kinds[deck->card->kind]);
         if (i == 12)

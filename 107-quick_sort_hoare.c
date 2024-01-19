@@ -20,7 +20,7 @@ void swap_ints(int *x, int *y)
 }
 
 /**
- * partition_hoare - Order a subset of an array of integers
+ * partition_hoare - Order a subset of an arr of integers
  *                   according to the hoare partition scheme.
  * @arr: The array of integers.
  * @len: The length of the array.
@@ -30,7 +30,7 @@ void swap_ints(int *x, int *y)
  * Return: The final partition index.
  *
  * Description: Uses the last element of the partition as the pivot.
- * Prints the array after each swap of two elements.
+ * Prints the arr after each swap of two elements.
  */
 int partition_hoare(int *arr, size_t len, int low, int high)
 {

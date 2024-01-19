@@ -7,8 +7,8 @@ void quick_sort(int *array, size_t size);
 
 /**
  * swap_ints - Exchange the values of two integers in an array.
- * @a: The pointer to the first integer to exchange.
- * @b: The pointer to the second integer to exchange.
+ * @a: The pointer to the first integer to be exchanged.
+ * @b: The pointer to the second integer to be exchanged.
  */
 void swap_ints(int *a, int *b)
 {
@@ -60,8 +60,8 @@ int lomuto_partition(int *array, size_t size, int left, int right)
  * lomuto_sort - Apply the quicksort algorithm recursively.
  * @array: The pointer to the array of integers to sort.
  * @size: The number of elements in the array.
- * @left: The index of the first element of the array segment to sort.
- * @right: The index of the last element of the array segment to sort.
+ * @left: The index of the first element of the array segment to be sorted.
+ * @right: The index of the last element of the array segment to be sorted.
  *
  * Description: Uses the Lomuto partition method.
  */
