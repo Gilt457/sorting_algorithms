@@ -34,7 +34,7 @@ void merge_sort(int *array, size_t size)
  * @array: An array of integers to sort.
  * @buffer: A buffer to store the sorted result.
  * @start: The start index of the subarray.
- * @end: The end index of the subarray.
+ * @end: The index at the conclusion of the subarray.
  */
 void merge_sort_recursive(int *array, int *buffer, size_t start, size_t end)
 {
@@ -53,9 +53,9 @@ void merge_sort_recursive(int *array, int *buffer, size_t start, size_t end)
  * merge_subarray - Sort a subarray of integers.
  * @array: An array of integers to sort.
  * @buffer: A buffer to store the sorted subarray.
- * @start: The start index of the array.
- * @middle: The middle index of the array.
- * @end: The end index of the array.
+ * @start: The index at which the array begins.
+ * @middle: The index in the center of the array.
+ * @end: The index at which the array terminates.
  */
 void merge_subarray(int *array, int *buffer, size_t start, size_t middle,
 		    size_t end)
