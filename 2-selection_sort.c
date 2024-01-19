@@ -2,7 +2,7 @@
 
 /**
  * swap - Two elements of an arrays are swapped
- * @x: The first element to swap.
+ * @x: The initial element to exchange.
  * @y: The second element to swap.
  */
 void swap(int *x, int *y)
