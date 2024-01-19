@@ -1,35 +1,35 @@
 #include "sort.h"
 
 /**
- * swap - Exchange two integers in an array.
- * @x: The first integer to exchange.
- * @y: The second integer to exchange.
+ * swap - Swap two integers in an array.
+ * @x: The first integer to swap.
+ * @y: The second integer to swap.
  */
 void swap(int *x, int *y)
 {
-	int aux;
+	int temp;
 
-	aux = *x;
+	temp = *x;
 	*x = *y;
-	*y = aux;
+	*y = temp;
 }
 
 /**
  * bubble_sort - Sort an array of integers in ascending order.
- * @array: An array of integers to be sort.
+ * @array: An array of integers to sort.
  * @size: The size of the array.
  *
- * Description: Prints the array after each exchange.
+ * Description: Prints the array after each swap.
  */
 void bubble_sort(int *array, size_t size)
 {
 	size_t j, n = size;
 	bool sorted = false;
 
-	if (array == NULL || size <= 1)
+	if (array == NULL || size < 2)
 		return;
 
-	while (!sorted)
+	while (sorted == false)
 	{
 		sorted = true;
 		for (j = 0; j < n - 1; j++)
@@ -41,6 +41,6 @@ void bubble_sort(int *array, size_t size)
 				sorted = false;
 			}
 		}
-		n = n-1;
+		n--;
 	}
 }
