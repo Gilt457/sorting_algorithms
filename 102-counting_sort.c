@@ -2,8 +2,8 @@
 
 /**
  * find_max - Find the maximum value in an integer array.
- * @arr: A pointer to an integer array.
- * @n: The number of elements in the array.
+ * @arr: A reference to an array of interger.
+ * @n: The count of components comprising the array.
  *
  * Return: The largest integer in the array.
  */
@@ -24,8 +24,8 @@ int find_max(int *arr, int n)
 /**
  * counting_sort - Sort an integer array in ascending order
  *                 using the counting sort algorithm.
- * @arr: A pointer to an integer array.
- * @n: The number of elements in the array.
+ * @arr: A reference to an array of intergers.
+ * @n: The count of components comprising the array.
  *
  * Description: Prints the counting array after setting it up.
  */
