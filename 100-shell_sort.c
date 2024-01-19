@@ -2,7 +2,7 @@
 
 /**
  * swap - Swap two elements in an array.
- * @x: The first element to swap.
+ * @x: The initial element to exchange.
  * @y: The second element to swap.
  */
 void swap(int *x, int *y)
@@ -15,8 +15,8 @@ void swap(int *x, int *y)
 }
 
 /**
- * shell_sort - Sort an array of integers in ascending
- *              order using the shell sort algorithm.
+ * shell_sort - an array of intergers is sorted ascendingly.
+ *              arranging in a shell sort algorithmic fashion.
  * @array: An array of integers.
  * @size: The size of the array.
  *
