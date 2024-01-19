@@ -7,8 +7,8 @@ void quick_sort(int *array, size_t size);
 
 /**
  * swap_ints - Exchange the values of two integers in an array.
- * @a: The pointer to the first integer to be exchanged.
- * @b: The pointer to the second integer to be exchanged.
+ * @a: The first integer to exchange.
+ * @b: The second integer to exchange.
  */
 void swap_ints(int *a, int *b)
 {
@@ -22,12 +22,12 @@ void swap_ints(int *a, int *b)
 /**
  * lomuto_partition - Sort a portion of an array of integers using
  *                    the lomuto partition method (last element as pivot).
- * @array: The index into the interger array 
- * @size: The count of components comprising the array
- * @left: The index of the first element of the portion to sort.
- * @right: The index of the last element of the portion to sort.
+ * @array: The array of integers.
+ * @size: The size of the array.
+ * @left: The beginning index of the portion to sort.
+ * @right: The ending index of the portion to sort.
  *
- * Return: The index of the pivot after partitioning.
+ * Return: The final partition index.
  */
 int lomuto_partition(int *array, size_t size, int left, int right)
 {
@@ -58,10 +58,10 @@ int lomuto_partition(int *array, size_t size, int left, int right)
 
 /**
  * lomuto_sort - Apply the quicksort algorithm recursively.
- * @array: The pointer to the array of integers to sort.
- * @size: The count of components comprising the array.
- * @left: The index of the first element of the array segment to be sorted.
- * @right: The index of the last element of the array segment to be sorted.
+ * @array: An array of integers to sort.
+ * @size: The size of the array.
+ * @left: The beginning index of the array segment to sort.
+ * @right: The ending index of the array segment to sort.
  *
  * Description: Uses the Lomuto partition method.
  */
@@ -78,10 +78,10 @@ void lomuto_sort(int *array, size_t size, int left, int right)
 }
 
 /**
- * quick_sort - Arrange an array of integers in ascending
+ * quick_sort - Sort an array of integers in ascending
  *              order using the quicksort algorithm.
- * @array: The index into the integers array.
- * @size: The count of components comprising the array.
+ * @array: An array of integers.
+ * @size: The size of the array.
  *
  * Description: Uses the Lomuto partition method. Prints
  *              the array after each exchange of two elements.
