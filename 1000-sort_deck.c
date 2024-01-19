@@ -66,7 +66,7 @@ char get_value(deck_node_t *card)
 }
 
 /**
- * insertion_sort_deck_kind - Sorts a deck of cards by their suit from spades to diamonds.
+ * insertion_sort_deck_kind - Sorts a deck of cards by their suit to diamond.
  * @deck: A pointer to the head of a deck_node_t doubly-linked list.
  */
 void insertion_sort_deck_kind(deck_node_t **deck)
@@ -95,7 +95,7 @@ void insertion_sort_deck_kind(deck_node_t **deck)
 }
 
 /**
- * insertion_sort_deck_value - Sorts a deck of cards by their value from ace to king within each suit.
+ * insertion_sort_deck_value - Sorts a deck of cards by their value.
  * @deck: A pointer to the head of a deck_node_t doubly-linked list.
  */
 void insertion_sort_deck_value(deck_node_t **deck)
@@ -126,7 +126,7 @@ void insertion_sort_deck_value(deck_node_t **deck)
 }
 
 /**
- * sort_deck - Sorts a deck of cards by their value and suit from ace of spades to king of diamonds.
+ * sort_deck - Sorts a deck of cards by their value and suit.
  * @deck: A pointer to the head of a deck_node_t doubly-linked list.
  */
 void sort_deck(deck_node_t **deck)
